@@ -1,0 +1,40 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  position: relative;
+  height: 100vh;
+}
+
+a {
+  color: #00B7FF;
+}
+
+i {
+  cursor: pointer;
+}
+
+small {
+  color: red;
+}
+
+#addCompany {
+  padding: 30px;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px gray;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  z-index: 10;
+  /** for centering the element without flex-box */
+  transform: translate(-53%, 0); 
+  /*! Blur Background <3 */
+  backdrop-filter: blur(6px);
+  display: none; 
+}
+
+#errorMessage {
+  position: absolute;
+  z-index: 20;
+  left: 0px;
+  display: none;
+}

@@ -1,0 +1,11 @@
+<tr class="theTableRow">
+    <th scope="row"><%= rowNumber %> </th>
+    <!--* the text-transform Capitalize the first letter -->
+    <td class="text-center" style="text-transform: capitalize;"> <%= company.name %> </td>
+    <td class="text-center"> <%= company.phoneNumber %> </td>
+    <!-- beautify the Date Format -->
+    <!--* substring(a,b) get character number a to number b of a string -->
+    <td class="text-center"> <%= company.createdAt.toString().substring(0,15) %> </td>
+    <td class="text-right"><i class="material-icons text-warning" title="edit">edit</i><i class="material-icons text-danger" title="Delete">delete_outline</i><i
+            class="material-icons text-info" title="Products">read_more</i></td>
+</tr>
